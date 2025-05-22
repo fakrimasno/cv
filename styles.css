@@ -1,0 +1,138 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+:root{
+  --prymary-clr:#4f6367;
+  --second-clr:#7a9e9f;
+  --third-clr:#b8d8d8;
+  --text1-clr:whitesmoke;
+
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+.container{
+    width: min(900px,100%);
+    margin-inline:auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border:1px solid var(--third-clr)
+}
+.kiri{
+  background-color: var(--prymary-clr);
+  color:var(--text1-clr);
+  padding: 0 1em;
+}
+.kiri > div{
+  margin:1em 0;
+  line-height: 1.5em;
+  h2{
+    padding: 1em 0 0.5em;
+  }
+}
+
+.pp{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pp img{
+  width: 100px;
+  margin-inline:auto;
+  border-radius: 50%;
+  margin: 20px 0;
+}
+.pp p{
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--third-clr);
+}
+.contact{
+  ul{
+  list-style: none;  
+  }
+  svg{
+  fill:var(--third-clr);
+  }
+  li{
+    display: flex;
+    gap:1em;
+    margin-bottom: 6px;
+  }
+}
+.pendidikan{
+  ul{
+  list-style: none;  
+  }
+  li{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+  }
+
+  li span:nth-child(1){
+    color: var(--third-clr);
+  }
+  li span:nth-child(2){
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+  li span:nth-child(3){
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+}
+
+.kanan{
+  padding: 0 1em;
+}
+.kanan > div{
+  margin:1em 0;
+  line-height: 1.5em;
+  h2{
+    padding: 1em 0 0.5em;
+    color: var(--prymary-clr);
+  }
+}
+
+.pengalaman > div{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.pengalaman > div > div:nth-child(2){
+  padding-left: 1em;
+}
+.pengalaman > div > div:nth-child(2) > span{
+  font-size: 14px;
+}
+
+.skill-container {
+  width: 100%;
+}
+
+.skill-bar {
+  background-color: #eee;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.skill-fill {
+  background-color: var(--third-clr);
+  height: 20px;
+  line-height: 20px;
+  color: white;
+  text-align: right;
+  padding-right: 10px;
+  border-radius: 20px 0 0 20px;
+}
+
+@media(max-width:650px){
+  .container{
+    grid-template-columns: 1fr;
+  }
+}
